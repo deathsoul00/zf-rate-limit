@@ -1,0 +1,12 @@
+{
+    "name": "deathsoul00/zf-rate-limit",
+    "description": "ZF Apigility module providing rate limit implementation to your RESTful API",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mike Alvarez",
+            "email": "michaeljpalvarez@gmail.com"
+        }
+    ],
+    "require": {}
+}
