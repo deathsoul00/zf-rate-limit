@@ -12,16 +12,16 @@ In your `composer.json` add `"ZfRateLimit\\": "module/ZfRateLimit/src/"` to `aut
 Here are the list of configuration inside the `zf-rate-limit.global.php`
 
 
-`listener` (string) - Handles the events `MvcEvent::EVENT_FINISH` and `MvcEvent::EVENT_ONROUTE` events. You can provide your own listener class for custom implementation of rate limit to your API `(Default: ZfRateLimit\ZfRateLimitListener)`
-`storage` (string|array) - storage used by the module. You can implement your own storage just by implementing the interface `ZfRateLimit\Storage\StorageInterface` (Default: array)
-`storage.name` (string) - name of the class storage to use
-`storage.options` (array) - options to be passed to your class
-`controllers` (array) - list of controllers that you want to have a rate limit implemented
-`controllers.{controller_name}` (array) - name of the controller
-`controllers.{controller_name}.{method}` (array) - sets the `limit` and `period` of the rate limit
-`controllers.{controller_name}.{method}.limit` (int) - number of requests/calls allowed
-`controllers.{controller_name}.{method}.period` (int) - time when to resets the limit in seconds
-`enable` (bool) - enable/disable the module
+- `listener` (string) - Handles the events `MvcEvent::EVENT_FINISH` and `MvcEvent::EVENT_ONROUTE` events. You can provide your own listener class for custom implementation of rate limit to your API `(Default: ZfRateLimit\ZfRateLimitListener)`
+- `storage` (string|array) - storage used by the module. You can implement your own storage just by implementing the interface `ZfRateLimit\Storage\StorageInterface` (Default: array)
+- `storage.name` (string) - name of the class storage to use
+- `storage.options` (array) - options to be passed to your class
+- `controllers` (array) - list of controllers that you want to have a rate limit implemented
+- `controllers.{controller_name}` (array) - name of the controller
+- `controllers.{controller_name}.{method}` (array) - sets the `limit` and `period` of the rate limit
+- `controllers.{controller_name}.{method}.limit` (int) - number of requests/calls allowed
+- `controllers.{controller_name}.{method}.period` (int) - time when to resets the limit in seconds
+- `enable` (bool) - enable/disable the module
 
 If you want to implement the rate limit to all of your `controllers` you can use the wildcard `*` and same goes for the `method` if you want to implement rate limit in all methods in your controller.
 
