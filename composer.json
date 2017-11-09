@@ -1,0 +1,29 @@
+{
+    "name": "deathsoul00/zf-rate-limit",
+    "description": "ZF Apigility module providing rate limit implementation to your RESTful API",
+    "type": "library",
+    "keywords": [
+        "zf-apigility",
+        "zf-rate-limit",
+        "rate-limit",
+        "zendframework",
+        "apigility-rate-limit",
+        "api"
+    ],
+    "authors": [
+        {
+            "name": "Mike Alvarez",
+            "email": "michaeljpalvarez@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^5.6",
+        "zendframework/zend-component-installer": "^1.0 || ^0.5 || ^1.0.0-dev@dev",
+        "zfcampus/zf-apigility": "^1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZfRateLimit\\": "module/ZfRateLimit/src/"
+        }
+    }
+}
