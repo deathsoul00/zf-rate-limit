@@ -5,6 +5,8 @@ Zf Apigility module for implementing RateLimit to your API
 
 Simple download and extract the `zip` file to your module folder and your API project and drop `zf-rate-limit.global.dist.php` in the config folder to `config/autoload` folder then remove the `.dist` to the filename. After that add `ZfRateLimit` to `modules.config.php` inside the `config` folder of your API.
 
+In your `composer.json` add `"ZfRateLimit\\": "module/ZfRateLimit/src/"` to `autoload.ps4` and run `composer dump-autoload` to add `ZfRateLimit` module to your autoload classes
+
 ## Configuration
 
 Here are the list of configuration inside the `zf-rate-limit.global.php`
